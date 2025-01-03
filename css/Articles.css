@@ -1,0 +1,109 @@
+/* 文章模块布局 */
+.articles {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.articles-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* 文章卡片样式 */
+.article-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-card:hover {
+    transform: translateY(-10px);
+    /* 鼠标悬停时轻微上浮 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 文章标题样式 */
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 文章摘要 */
+.article-summary {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* 文章发布日期 */
+.article-date {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+/* 阅读更多按钮 */
+.read-more {
+    font-size: 16px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #388e3c;
+}
+
+/* 加载更多按钮 */
+.load-more {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.load-more:hover {
+    background-color: #388e3c;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .articles {
+        padding: 20px;
+    }
+
+    .article-card {
+        padding: 15px;
+    }
+
+    .article-title {
+        font-size: 20px;
+    }
+
+    .article-summary {
+        font-size: 14px;
+    }
+
+    .read-more {
+        font-size: 14px;
+    }
+}
